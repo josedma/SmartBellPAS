@@ -11,6 +11,7 @@ $resultado= $con->query($consulta);
 		
 		include "menu.html";
 	}else{
-		echo "Datos incorrectos";
+		echo '<script>alert("Datos incorrectos, Intentalo Nuevamente")</script>';
+		include "index.html";
 	}
 ?>
