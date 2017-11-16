@@ -61,76 +61,37 @@
 	</div>
 </div>
 </div>
-
-<div class="main_bg"  id="about"><!-- start about us -->
+<div class="slider_bg"><!-- start slider -->
 <div class="container">
-	<div class="row about">
-		<div class="col-md-3 about_img">
-			<img src="images/user.png" alt="" class="responsive"/>
-		</div>
+		<div class="row slider">
 		<div class="col-md-9">
-			<?php
-				include_once "conexion.php";
-
-				$idh = $_POST['idHorario'];
-				$des = $_POST['descripcion'];
-				$h1 = $_POST['hora1'];
-				$h2 = $_POST['hora2'];
-				$h3 = $_POST['hora3'];
-				$descanso = $_POST['descanso'];
-				$h4 = $_POST['hora4'];
-				$h5 = $_POST['hora5'];
-				$h6 = $_POST['hora6'];
-				$salir = $_POST['salida'];
-
-				//$insert= "INSERT INTO horario (id, idRegHorario, horaInicio, horaFin) VALUES ('$ideh', '$idereg', '$horain', '$horafi')";
-
-				$sql = "INSERT INTO horarios(id_horario, descripcion, hora1, hora2, hora3, descanso, hora4, hora5, hora6, salida) VALUES ('$idh','$des','$h1','$h2','$h3','$descanso','$h4','$h5','$h6','$salir')";
-
-				$resultado = mysqli_query($con, $sql);
-
-				if(!$resultado){
-
-					echo "error al registrar";
-				}
-				else{
-					echo "Registro exitoso";
-				}
-			?>
+			
+			
 		</div>
-	</div>
+        <div class="clearfix"></div>
+      </div>
 </div>
 </div>
-<div class="footer_bg" id="contact"><!-- start footer -->
+
+<div class="footer_bg" id="nosotros"><!-- start footer -->
 <div class="container">
-	<div class="row footer">
-		<div class="col-md-8 contact_left">
-			<h3>get in touch</h3>
-			<p>In order to get in touch use the contact form below:</h4>
-			<form method="post" action="contact-post.html">
-				<input type="text" value="Name (Required)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-				<input type="text" value="Email (Required)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-				<input type="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
-				<textarea onfocus="if(this.value == 'Your Message here....') this.value='';" onblur="if(this.value == '') this.value='Your Message here....;" >Your Message here....</textarea>
-				<span class="pull-right"><input type="submit" value="submit us"></span>
-			</form>
-		</div>
-		<div class="col-md-4  contact_right">
-			<p><span>Lorem Ipsum is simply dummy text: </span> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+	<div class="col-md-4  contact_right">
+		<h1><a href="xyz"><font color=white>SmartBell</font></a></h1>
+			<p>"Tu Nueva Herramienta":</h4>
+			<p><span>Acerca de: </span> SmartBell es un proyecto el cual busca facilitar la mecanica del tradicional timbre estudiantil realizado en las escuelas de la ciudad de monteria, ha sido desarrolada por un grupo de estudiantes de Ingenieria De Sistemas, conformado por: Eva Padilla, Saul Machado, Jesus Nieves, José Murillo. Los cuales desidieron icnursionar en este campo y desarrollar este aplicativo para la solucion de algunos  problemas que se venian presentando en las instituciones. </p>
 			<ul class="list-unstyled address">
-				<li><i class="fa fa-map-marker"></i><span>500 Lorem Ipsum Dolor Sit,</span></li>
-				<li><i class="fa fa-phone"></i><span>(00) 222 666 444</span></li>
-				<li><i class="fa fa-envelope"></i><a href="mailto:info@mycompany.com">info(at)mycompany.com</a></li>
+				<li><i class="fa fa-map-marker"></i><span>Universidad de Cordoba - Campus Monteria</span></li>
+				<!--<li><i class="fa fa-phone"></i><span>(00) 222 666 444</span></li>
+				<li><i class="fa fa-envelope"></i><a href="mailto:info@mycompany.com">info(at)mycompany.com</a></li>-->
 			</ul>
-		</div>		
-	</div>
+		</div>
 </div>
 </div>
 <div class="footer1_bg"><!-- start footer1 -->
 	<div class="container">
 		<div class="row  footer">
 			<div class="copy text-center">
-				<p class="link"><span>&#169; All rights reserved | Template by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+				<p class="link"><span>&#169; Todos los derechos reservados | Template by&nbsp;<a href="http://w3layouts.com/"> Unicordoba</a></span></p>
 				<a href="#home" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
 			</div>
 		</div>
