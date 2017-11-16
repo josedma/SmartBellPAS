@@ -78,12 +78,13 @@
 			<th>4a Hora</th>
 			<th>5a Hora</th>
 			<th>6a Hora</th>
+			<th>Seleccionado</th>
 		</thead>
 		<?php
 			require_once "conexion.php";
 			$sql = "SELECT * FROM horarios";
 			$result = mysqli_query($con,$sql);
-
+			$i = 0;
 			while($mostrar = mysqli_fetch_array($result)){
 		?>
 		<tbody>
@@ -97,6 +98,7 @@
 				<td><?php echo $mostrar['hora4']?></td>
 				<td><?php echo $mostrar['hora5']?></td>
 				<td><?php echo $mostrar['hora6']?></td>
+				<td><input type="checkbox" name="$i"></td>
 			</tr>
 			<?php 
 				}
