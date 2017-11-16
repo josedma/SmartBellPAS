@@ -78,7 +78,8 @@
 			<th>4a Hora</th>
 			<th>5a Hora</th>
 			<th>6a Hora</th>
-			<th>Seleccionado</th>
+			<th>Hora De Salida</th>
+			<th>Seleccionar</th>
 		</thead>
 		<?php
 			require_once "conexion.php";
@@ -98,7 +99,8 @@
 				<td><?php echo $mostrar['hora4']?></td>
 				<td><?php echo $mostrar['hora5']?></td>
 				<td><?php echo $mostrar['hora6']?></td>
-				<td><input type="checkbox" name="$i"></td>
+				<td><?php echo $mostrar['salida']?></td>
+				<td><input type="checkbox" name="$i++"></td>
 			</tr>
 			<?php 
 				}
